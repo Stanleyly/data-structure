@@ -34,7 +34,6 @@ int main(void)
 {
 	SeqList L;
 	InitList(L);
-	// .....
 	IncreaseSize(L,5);
 	return 0;
  } 
