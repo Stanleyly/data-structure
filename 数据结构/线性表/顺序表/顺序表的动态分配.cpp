@@ -2,13 +2,14 @@
 #include<cstdio>
 #include<cstring>
 #include<algorithm>
+using namespace std;
 
 #define InitSize 10
 
 typedef struct{
-	int *data;//¶¯Ì¬·ÖÅäÊı×éÖ¸Õë 
-	int MaxSize;//Ë³Ğò±í×î´óÈİÁ¿ 
-	int length;//Ë³Ğò±íµ±Ç°³¤¶È 
+	int *data;//åŠ¨æ€åˆ†é…æ•°ç»„æŒ‡é’ˆ 
+	int MaxSize;//é¡ºåºè¡¨æœ€å¤§å®¹é‡ 
+	int length;//é¡ºåºè¡¨å½“å‰é•¿åº¦ 
 }SeqList; 
 
 void InitList(SeqList &L)
@@ -24,9 +25,9 @@ void IncreaseSize(SeqList &L,int len)
 	L.data = (int *) malloc(sizeof(int) * (InitSize + len));
 	for(int i = 0;i < L.length;++i)
 	{
-		L.data[i] = q[i];//½«Êı¾İ¸´ÖÆµ½ĞÂÇøÓò 
+		L.data[i] = q[i];//å°†æ•°æ®å¤åˆ¶åˆ°æ–°åŒºåŸŸ 
 	}
-	L.MaxSize = L.MaxSize + len;  //Ë³Ğò±í×î´óÈİÁ¿Ôö¼Ólen 
+	L.MaxSize = L.MaxSize + len;  //é¡ºåºè¡¨æœ€å¤§å®¹é‡å¢åŠ len 
 	free(q);
  } 
  

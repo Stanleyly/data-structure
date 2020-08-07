@@ -20,7 +20,7 @@ void InitList(SeqList &L)
 	L.length=0;
 } 
 
-bool ListInsert(SeqList &L,int i,int e){  //顺序表L，第i个位置插入e 
+bool ListInsert(SeqList &L,int i,int e){  //椤哄簭琛↙锛岀i涓綅缃彃鍏 
 	if(i<1||i>L.length+1)
 	return false;
 	if(L.length>=MaxSize)
@@ -34,7 +34,7 @@ bool ListInsert(SeqList &L,int i,int e){  //顺序表L，第i个位置插入e
 	return true;
 }
 
-bool ListDelete(SeqList &L,int i,int &e)  //删除第i个位置的元素 
+bool ListDelete(SeqList &L,int i,int &e)  //鍒犻櫎绗琲涓綅缃殑鍏冪礌 
 {
 	if(i<1||i>L.length)
 	return false;
